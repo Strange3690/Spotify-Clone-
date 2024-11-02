@@ -1,0 +1,34 @@
+
+        // if(audioElement.paused){
+        // songIndex = parseInt(e.target.id);
+        // e.target.classList.remove('fa-play')
+        // e.target.classList.add('fa-pause')
+        // audioElement.src=`./assets/Songs/${songIndex + 1}.m4a`;
+        // masterSongName.innerText = songs[songIndex].songName;
+        // audioElement.currentTime=0;
+        // audioElement.play();
+
+
+        // masterplay.classList.remove('fa-play');
+        // masterplay.classList.add('fa-pause');
+        // gif.style.opacity=1;
+        // }else{
+        // songIndex = parseInt(e.target.id);
+        // e.target.classList.remove('fa-pause')
+        // e.target.classList.add('fa-play')
+        // audioElement.src=`./assets/Songs/${songIndex + 1}.m4a`;
+        // masterSongName.innerText = songs[songIndex].songName;
+        // audioElement.currentTime=0;
+        // audioElement.pause();
+
+        // masterplay.classList.remove('fa-pause');
+        // masterplay.classList.add('fa-play');
+        // gif.style.opacity=1;
+        // }
+        
+
+songIndex = parseInt(e.target.id);
+audioElement.src=`./assets/Songs/${songIndex + 1}.m4a`;
+masterSongName.innerText = songs[songIndex].songName;
+e.target.classList.remove('fa-play');
+e.target.classList.add('fa-pause');
